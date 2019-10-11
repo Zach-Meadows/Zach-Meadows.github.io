@@ -3,6 +3,8 @@ import Example from "./Example";
 import "../styles/Projects.css"
 import Me from "../images/headshot.jpg"
 
+
+
 const projectInfo = [
   {
     name: "Hangman/Magic Game",
