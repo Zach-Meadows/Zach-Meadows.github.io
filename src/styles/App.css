@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.me {
+  object-fit: cover;
+	border-style: solid;
+	border-color: blue; 
+	border-radius: 100px;
+	height: 200px;
+	width: 200px;
+}
+
+/* a{
+  text-decoration: none;
+  background-color: cyan;
+  padding: 40px;
+  cursor: pointer;
+}
+a:visited{
+  color: black;
+} */

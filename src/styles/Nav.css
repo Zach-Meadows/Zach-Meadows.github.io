@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav > a {
+  text-decoration: none;
+  background-color: cyan;
+  padding: 40px;
+  cursor: pointer;
+}
+a:visited {
+  color: black;
+}
