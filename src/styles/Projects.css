@@ -13,3 +13,12 @@
 	width: 300px;
 	padding: 5px;
 }
+.exImg{
+	border-radius: 20px;
+	border: solid rgb(63, 0, 235) 2px;
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+    background-repeat: no-repeat;
+}

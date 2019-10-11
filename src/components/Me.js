@@ -5,7 +5,7 @@ function Me() {
   return (
     <div>
       <h1>Zach Meadows</h1>
-      <img src={headshot} class="me" />
+      <img src={headshot} className="me" />
       <h2>Programmer/Artist</h2>
     </div>
   );
