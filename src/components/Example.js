@@ -1,8 +1,13 @@
 import React from 'react'
 
+
+   
+
+
 function Example(props){
+  
     return(
-        <div className="example">
+        <div className="example" style ={{backgroundImage: props.image}}> 
             <a href={props.url}/>
             <h3>{props.name}</h3>
             <div className={props.cn} />
