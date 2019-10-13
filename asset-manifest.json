@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46e55fc2.chunk.css",
+    "main.js": "/static/js/main.4340470d.chunk.js",
+    "main.js.map": "/static/js/main.4340470d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bdf99fde.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bdf99fde.js.map",
+    "static/js/2.002a9d00.chunk.js": "/static/js/2.002a9d00.chunk.js",
+    "static/js/2.002a9d00.chunk.js.map": "/static/js/2.002a9d00.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.55c0ba8156d3cef397d22acb3b0ab801.js": "/precache-manifest.55c0ba8156d3cef397d22acb3b0ab801.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.46e55fc2.chunk.css.map": "/static/css/main.46e55fc2.chunk.css.map",
+    "static/media/ApiExample.png": "/static/media/ApiExample.66fd8c5f.png",
+    "static/media/index.css": "/static/media/github.3a7fc487.png",
+    "static/media/hangmanExample.png": "/static/media/hangmanExample.04ee6000.png",
+    "static/media/headshot.jpg": "/static/media/headshot.447ea93a.jpg",
+    "static/media/mrsrvr.png": "/static/media/mrsrvr.a502a17f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdf99fde.js",
+    "static/js/2.002a9d00.chunk.js",
+    "static/css/main.46e55fc2.chunk.css",
+    "static/js/main.4340470d.chunk.js"
+  ]
+}
