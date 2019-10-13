@@ -1,17 +1,21 @@
 .projects{
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 .example{
     background-color: rgba(255, 255, 255, 0.747);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: top;
 	align-items: center;
 	border-radius: 20px;
 	width: 300px;
 	padding: 5px;
+	margin: 5px;
+}
+.example:hover{
+	background-color: rgba(154, 247, 253, 0.747);
+
 }
 .exImg{
 	border-radius: 20px;
@@ -21,4 +25,24 @@
 	background-size: cover;
 	background-position: center;
     background-repeat: no-repeat;
+}
+.uselist{
+	border: solid rgb(63, 0, 235) 2px;
+	border-radius: 5px;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(3, auto);
+	grid-column-gap: 5px;
+	grid-area: auto;
+	padding: 5px;
+}
+.uselist > p {
+	margin: 3px;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+a:visited{
+	color: black;
 }

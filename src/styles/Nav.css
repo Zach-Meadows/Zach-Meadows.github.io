@@ -1,14 +1,28 @@
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.747);
+  width: 70vw;
+  height: 10vh;
+  align-items: center;
 }
 .nav > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size-adjust: inherit;
   text-decoration: none;
-  background-color: cyan;
-  padding: 40px;
+  height: inherit;
   cursor: pointer;
+  width: inherit;
+  border-radius: 5px;
+}
+.nav > a:hover {
+  background-color: rgba(154, 247, 253, 0.747);
 }
 a:visited {
   color: black;
 }
+
