@@ -1,0 +1,14 @@
+.text{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px;
+    padding: 1px 5px;
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    max-width: max-content;
+}
+.meContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

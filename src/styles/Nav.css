@@ -3,12 +3,14 @@
   flex-direction: row;
   justify-content: space-between;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.747);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 70vw;
   height: 10vh;
   align-items: center;
+  margin: 5px;
 }
 .nav > a {
+  font-family: 'Merriweather', serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +22,7 @@
   border-radius: 5px;
 }
 .nav > a:hover {
-  background-color: rgba(154, 247, 253, 0.747);
+  background-color: rgb(255, 255, 255);
 }
 a:visited {
   color: black;

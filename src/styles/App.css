@@ -1,9 +1,10 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 2;
 }
 
 .me {
@@ -14,4 +15,10 @@
 	height: 140px;
 	width: 140px;
 }
-
+.overlay{
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.26);
+  height: 200vh;
+  width: 100vw;
+}

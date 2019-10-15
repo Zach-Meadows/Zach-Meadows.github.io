@@ -3,7 +3,7 @@
     justify-content: space-around;
 }
 .example{
-    background-color: rgba(255, 255, 255, 0.747);
+	background-color: rgba(255, 255, 255, 0.8);
 	display: flex;
 	flex-direction: column;
 	justify-content: top;
@@ -14,7 +14,7 @@
 	margin: 5px;
 }
 .example:hover{
-	background-color: rgba(154, 247, 253, 0.747);
+	background-color: rgb(255, 255, 255);
 
 }
 .exImg{
@@ -45,4 +45,10 @@ a{
 }
 a:visited{
 	color: black;
+}
+.projContain{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

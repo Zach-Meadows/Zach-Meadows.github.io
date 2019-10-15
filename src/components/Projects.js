@@ -32,8 +32,8 @@ const projectInfo = [
 
 function Projects() {
   return (
-    <div>
-      <h2>Projects</h2>
+    <div className="projContain">
+      <div className="text"><h2>Projects</h2></div>
       <div className="projects">
         {projectInfo.map((item, i) => {
           return <Example {...item} key={i} />;
