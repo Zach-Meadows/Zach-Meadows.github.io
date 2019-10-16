@@ -2,6 +2,7 @@ import React from "react";
 
 function Example(props) {
   return (
+    <a href={props.url}>
       <div className="example">
         <h3>{props.name}</h3>
 
