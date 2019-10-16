@@ -2,7 +2,6 @@ import React from "react";
 
 function Example(props) {
   return (
-    <Link to={"/" + props.name}
       <div className="example">
         <h3>{props.name}</h3>
 
