@@ -15,10 +15,3 @@
 	height: 140px;
 	width: 140px;
 }
-.overlay{
-  position: absolute;
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.26);
-  height: 200vh;
-  width: 100vw;
-}

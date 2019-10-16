@@ -2,7 +2,7 @@ import React from "react";
 
 function Example(props) {
   return (
-    <a href={props.url}>
+    <Link to={"/" + props.name}
       <div className="example">
         <h3>{props.name}</h3>
 
@@ -10,7 +10,6 @@ function Example(props) {
           className="exImg"
           style={{ backgroundImage: `url(${props.image})` }}
         />
-        <p>This project used:</p>
         <div className="uselist">
           {props.used.map((item, i) => {
             return <p key={i}>{item}</p>;
