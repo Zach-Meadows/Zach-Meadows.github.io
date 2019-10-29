@@ -6,7 +6,9 @@ function Nav() {
   return (
     <div className="nav">
       <Link to="/">Home</Link>
-      <a href="https://github.com/Zach-Meadows">My Github</a>
+      <Link to="/projects">Projects</Link>
+      <Link to="/art">Art</Link>
+      <Link to="/contact">Contact Me</Link>
       <a href="https://medium.com/@zmeadows1">Blog</a>
       <a href="https://www.linkedin.com/in/zachary-meadows-63273410b/">LinkedIn</a>
       <a href="https://www.facebook.com/BlackMeadowStudio/">Art</a>

@@ -5,7 +5,7 @@ import api from "../images/ApiExample.png"
 import magic from "../images/hangmanExample.png"
 import mrsrvr from "../images/mrsrvr.png"
 import working from "../images/Working-Title.png"
-
+import githubIcon from "../images/github-icon.png"
 const projectInfo = [
   {
     name: "Hangman/Magic Game",
@@ -45,6 +45,21 @@ function Projects() {
         {projectInfo.map((item, i) => {
           return <Example {...item} key={i} />;
         })}
+      </div>
+      <div className="text"><h2>All Projects can be viewed on </h2>
+        <div style={{
+          display: "flex",
+          justifyContent: "center"
+        }}>
+          <a href="https://github.com/Zach-Meadows" style={{
+        color: "rgb(3,102,214)",
+        textDecoration: "underline"
+      }}><h2>My Github</h2></a><div style={{
+        backgroundImage: `url(${githubIcon})`,
+        backgroundSize: 'contain',
+        width: "50px",
+        height: "50px",
+      }}/></div>
       </div>
     </div>
   );

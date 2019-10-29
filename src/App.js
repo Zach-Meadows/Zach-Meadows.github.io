@@ -4,6 +4,8 @@ import Projects from './components/Projects'
 import Me from './components/Me'
 import Contact from "./components/Contact"
 import './styles/App.css';
+import {Route} from "react-router-dom"
+import Art from "./components/Art"
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
    
       <Me />
       <Nav />
-      <Projects />
-      <Contact />
+    <Route path="/projects" render={Projects}/>
+    <Route path="/contact" render={Contact} />
+    <Route path="/art" render={Art} />
     </div>
   );
 }
