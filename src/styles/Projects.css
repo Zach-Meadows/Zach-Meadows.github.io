@@ -2,7 +2,8 @@ p{
 	margin: 10px;
 }
 .projects{
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
     justify-content: space-around;
 }
 .exampleFront, .exampleBack{
