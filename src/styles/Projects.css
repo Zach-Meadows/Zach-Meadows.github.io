@@ -20,11 +20,11 @@ p{
 }
 .exampleLink{
 	padding: 10px;
-	background-color: cyan;
+	background-color: #c6e48b;
 	border-radius: 10px;
 }
 .exampleLink:hover{
-	background-color: blue;
+	background-color: #7bc96f;
 }
 .exampleFront{
 	background-color: rgba(255, 255, 255, 0.8);
@@ -55,12 +55,6 @@ p{
 .flipContain:hover .flipInner{
 	transform: rotateY(180deg);
 }
-
-.flip-box-back {
-	background-color: dodgerblue;
-	color: white;
-	transform: rotateY(180deg);
-  }
 .exImg{
 	border-radius: 20px;
 	border: solid rgb(63, 0, 235) 2px;
@@ -94,13 +88,4 @@ a:visited{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-
-
-
-@media only screen and (max-width: 420px){
-	.projects{
-		flex-direction: column;
-	}
 }
