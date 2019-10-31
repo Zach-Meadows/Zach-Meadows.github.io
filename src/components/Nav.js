@@ -10,7 +10,6 @@ function Nav() {
       <Link to="/projects">Projects</Link>
       <Link to="/art">Art</Link>
       <Link to="/contact">Contact Me</Link>
-      <a href="https://medium.com/@zmeadows1">Blog</a>
     </div>
   );
 }

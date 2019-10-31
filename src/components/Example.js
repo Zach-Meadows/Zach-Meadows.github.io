@@ -20,7 +20,10 @@ function Example(props) {
         <div className="exampleBack">
           <h3>{props.name}</h3>
           <p>{props.info}</p>
-          <a href={props.url} className="exampleLink">Check out this Project</a>
+          <a href={props.url}   
+          target="_blank"
+        rel="noopener noreferrer"
+        className="exampleLink">Check out this Project</a>
         </div>
       </div>
     </div>

@@ -18,6 +18,7 @@ function ArtEx(props) {
       <a
         href="https://www.facebook.com/BlackMeadowStudio/"
         target="_blank"
+        rel="noopener noreferrer"
         style={{
           color: "rgb(3,102,214)",
           textDecoration: "underline"
@@ -27,6 +28,7 @@ function ArtEx(props) {
       </a>
       <img
         src={props.image}
+        alt={props.name}
         style={{
           borderRadius: "0 0 20px 20px",
           width: "90vw",
