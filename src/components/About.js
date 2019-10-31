@@ -6,7 +6,6 @@ function About(){
         <div className="text" style={{
             width: "90vw"
         }}>
-            <img></img>
             <p>{lotus(1)}</p>
         </div>
     )
