@@ -7,7 +7,7 @@ function About(){
         <div className="text" style={{
             width: "90vw"
         }}>
-            <div>Hi, I'm Zach Meadows and I'm a Software Engineer. <br />
+            <div><h3>Hi, I'm Zach Meadows and I'm a Software Engineer.</h3>
                 I'm a creative mind born and raised in northern Virgina. 
                 I've always been torn between creative outlets and computer related studies, 
                 until I realized that I could have the best of both worlds with programming. 
@@ -18,7 +18,10 @@ function About(){
                 
                 After work hours I spend most of my time creating things, across multiple mediums. My most recent pet project is a game I'm building called "Working Title." 
                 It's not done, and that's the whole premise of the game, but we can get into that some other time. 
-                Additionally I make cosplay, costumes, and suits or and other form of replicated fandom which you can see examples of <Link to="/art">HERE.</Link></div>
+                Additionally I make cosplay, costumes, and suits or and other form of replicated fandom which you can see examples of <Link to="/art" style={{color: 'rgb(3, 102, 214)'}}>HERE.</Link> 
+                There are some times when I don't make stuff and instead I hang out with friends and go out on hikes. 
+                When I don't have the energy for those things, I like to do more simple things like play video games, board games, and card games. 
+                Adventure games like Skyrim, card games like Magic: the Gathering, and even the occasional game of Mysterium are my favorite ways to unwind.</div>
         </div>
     )
 }
