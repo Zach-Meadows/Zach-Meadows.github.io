@@ -1,11 +1,25 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import styled from "styled-components"
 const lotus = require('lotus-ipsum')
+
+const HoverLink =  styled(Link)`
+color: rgb(3, 102, 214);
+:visited {
+    color: rgb(3, 102, 214)
+}
+:hover {
+    text-decoration: underline;
+}
+`
 
 function About(){
     return(
         <div className="text" style={{
-            width: "90vw"
+            width: "90vw",
+            marginBottom: "20px",
+            padding: "10px",
+            boxSizing: "border-box"
         }}>
             <div><h3>Hi, I'm Zach Meadows and I'm a Software Engineer.</h3>
                 I'm a creative mind born and raised in northern Virgina. 
@@ -18,10 +32,10 @@ function About(){
                 
                 After work hours I spend most of my time creating things, across multiple mediums. My most recent pet project is a game I'm building called "Working Title." 
                 It's not done, and that's the whole premise of the game, but we can get into that some other time. 
-                Additionally I make cosplay, costumes, and suits or and other form of replicated fandom which you can see examples of <Link to="/art" style={{color: 'rgb(3, 102, 214)'}}>HERE.</Link> 
+                Additionally I make cosplay, costumes, and suits or and other form of replicated fandom which you can see examples of <HoverLink to="/art">HERE</HoverLink>.  
                 There are some times when I don't make stuff and instead I hang out with friends and go out on hikes. 
                 When I don't have the energy for those things, I like to do more simple things like play video games, board games, and card games. 
-                Adventure games like Skyrim, card games like Magic: the Gathering, and even the occasional game of Mysterium are my favorite ways to unwind.</div>
+                Adventure games like Skyrim, card games like Magic: the Gathering, and the occasional game of Mysterium are my favorite ways to unwind.</div>
         </div>
     )
 }
