@@ -41,6 +41,7 @@ function Contact() {
         method="POST"
         target="_blank"
       >
+        <input type="hidden" name="_template" value="table"></input>
       <FormLabel>Your Name</FormLabel>
         <StyledInput type="text" name="name" placeholder="Name"/>
       <FormLabel>Your Email</FormLabel>

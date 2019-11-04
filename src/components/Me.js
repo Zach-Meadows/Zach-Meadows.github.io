@@ -38,7 +38,7 @@ function Me() {
         }}
       >
         <AstyledLink
-          href="https://www.linkedin.com/in/zach-meadows/"
+          href="https://www.linkedin.com/in/Zach-Meadows/"
           target="_blank"
           rel="noopener noreferrer"
         >
