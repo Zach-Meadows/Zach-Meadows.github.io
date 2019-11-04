@@ -6,7 +6,11 @@ function Home() {
         <div className="text" style={{
             width: "90vw"
         }}>
-            <p>{lotus(1)}</p>
+            <h2>Resume</h2>
+            <div>
+                <h3>Skills</h3>
+
+            </div>
         </div>
     )
 }
