@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 import styled from "styled-components"
 import css from '../images/css.png'
 import html from '../images/html.png'
@@ -7,6 +8,8 @@ import python from '../images/python.png'
 import ReactIcon from '../images/react.png'
 import ReduxIcon from '../images/Redux.png'
 import JS from '../images/javascript.svg'
+import GA from '../images/GA.png'
+import HS from '../images/lchs.jpg'
 
 const ResumeContain = styled.div`
 width: 90vw;
@@ -15,13 +18,17 @@ margin: 10px;
 padding: 1px 5px;
 border-radius: 10px;
 font-family: 'Comfortaa', cursive; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `
 const FlexSkill = styled.div`
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
 align-items: center;
-margin: 10px
+margin: 10px 0 50px 0;
 `
 
 const SkillImage = styled.img`
@@ -31,21 +38,71 @@ margin: 10px;
 object-fit: contain;
 position: center;
 `
+const FlexSchool = styled.div`
+display: flex;
+flex-direction: column;
+`
+const SchoolItem = styled.div`
+margin: 5px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+`
+const ResumeSectionHead = styled.h2`
+margin: 0;
+text-decoration: underline;
+`
+const DownloadResume = styled(Link)`
+background-color: white;
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: .2rem .2rem .4rem rgba(0,0,0,.5);
+:hover{
+    background-color: gray;
+}
+:active{
+    background-color: lightcoral;
+}
+
+`
+
 const ArraySkills = [html,css,JS,mongo,python,ReactIcon,ReduxIcon]
 
 function Home() {
     return( 
         <ResumeContain>
-            <h2>Resume</h2>
+            <h1>Resume</h1>
             <div>
-                <h3>Skills</h3>
+                <ResumeSectionHead>Skills</ResumeSectionHead>
                 <FlexSkill>
                 {ArraySkills.map((item, i)=>{
                     return (
                         <SkillImage src={item} key={i}></SkillImage>
                     )
                 })}</FlexSkill>
+                
+                <FlexSchool>
+                    <ResumeSectionHead>Education</ResumeSectionHead>
+                    <SchoolItem>
+                        <div>
+                        <h3>General Assembly, August 2019 - October 2019</h3>
+                        <p>Certificate of Completion, Software Engineering</p>
+                        </div>
+                        <SkillImage src={GA}></SkillImage>
+                    </SchoolItem>
+                    <SchoolItem>
+                        <div>
+                        <h3 style={{margin: "0"}}>Loudoun County High School, 2006 - 2010</h3>
+                        <p>High School Diploma</p>
+                        </div>
+                        <SkillImage src={HS}></SkillImage>
+                    </SchoolItem>
+                </FlexSchool>
             </div>
+            <DownloadResume to='/files/Zach-Meadows-Resume.pdf' target="_blank" download>Download a copy of my full resume!</DownloadResume>
         </ResumeContain>
     )
 }
