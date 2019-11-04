@@ -1,4 +1,15 @@
 import React from "react";
+import styled from "styled-components"
+
+const HoverLink = styled.a`
+  color: rgb(3, 102, 214);
+  :visited {
+    color: rgb(3, 102, 214);
+  }
+  :hover {
+    text-decoration: underline;
+  }
+`;
 
 function ArtEx(props) {
   return (
@@ -15,17 +26,14 @@ function ArtEx(props) {
     >
       <h2>{props.name}</h2>
       <p>{props.info}</p>
-      <a
+      <HoverLink
         href="https://www.facebook.com/BlackMeadowStudio/"
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          color: "rgb(3,102,214)",
-          textDecoration: "underline"
-        }}
+
       >
         More on Facebook
-      </a>
+      </HoverLink>
       <img
         src={props.image}
         alt={props.name}

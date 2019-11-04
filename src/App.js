@@ -9,7 +9,7 @@ import Art from "./components/Art";
 import About from "./components/About";
 import Home from "./components/Home"
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Me />

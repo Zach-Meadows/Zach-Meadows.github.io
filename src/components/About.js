@@ -13,7 +13,6 @@ const HoverLink = styled(Link)`
     text-decoration: underline;
   }
 `;
-const ItemContainer = styled.div``;
 
 const MyImage = styled.img`
   width: 200px;
@@ -76,7 +75,7 @@ function About() {
         <LaxImage src={Lax}></LaxImage>
           After work hours I spend most of my time creating things, across
           multiple mediums. My most recent pet project is a game I'm building
-          called "<HoverLink to="/glitchy-game">Working Title</HoverLink>." It's not done, and that's the whole premise of
+          called "<HoverLink target="_blank"to="/glitchy-game"  rel="noopener noreferrer">Working Title</HoverLink>." It's not done, and that's the whole premise of
           the game, but we can get into that some other time. Additionally I
           make cosplay, costumes, and suits or and other form of replicated
           fandom which you can see examples of{" "}
