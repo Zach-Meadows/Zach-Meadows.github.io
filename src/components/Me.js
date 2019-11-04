@@ -16,7 +16,7 @@ ${AstyledLink}:hover & {
 }
 `;
 
-function Me() {
+function Me(props) {
   return (
     <div className="meContainer">
       <div className="text">

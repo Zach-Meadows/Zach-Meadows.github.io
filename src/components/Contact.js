@@ -33,7 +33,7 @@ const FormLabel = styled.label`
 margin-top: 10px;
 `
 
-function Contact() {
+function Contact(props) {
   return (
     <FormContainer>
       <EmailForm

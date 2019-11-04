@@ -71,7 +71,7 @@ box-shadow: .2rem .2rem .4rem rgba(0,0,0,.5);
 
 const ArraySkills = [html,css,JS,mongo,python,ReactIcon,ReduxIcon]
 
-function Home() {
+function Home(props) {
     return( 
         <ResumeContain>
             <h1>Resume</h1>

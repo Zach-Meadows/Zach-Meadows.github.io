@@ -49,7 +49,7 @@ const AboutContainer = styled.div`
   justify-content: space-between;
 `;
 
-function About() {
+function About(props) {
   return (
     <AboutContainer>
       <h3>Hi, I'm Zach Meadows and I'm a Software Engineer.</h3>

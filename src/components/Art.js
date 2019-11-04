@@ -21,7 +21,7 @@ const manyArts = [
   }
 ];
 
-function Art() {
+function Art(props) {
   return (
     <div
       style={{

@@ -53,7 +53,7 @@ const projectInfo = [
   }
 ];
 
-function Projects() {
+function Projects(props) {
   return (
     <div className="projContain">
       <div className="text">

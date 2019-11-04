@@ -14,11 +14,11 @@ function App(props) {
     <div className="App">
       <Me />
       <Nav />
-      <Route path="/" exact render={Home} />
-      <Route path="/about" render={About} />
-      <Route path="/projects" render={Projects} />
-      <Route path="/contact" render={Contact} />
-      <Route path="/art" render={Art} />
+      <Route path="/" exact render={props => <Home {...props}/>} />
+      <Route path="/about" render={props => <About {...props}/>} />
+      <Route path="/projects" render={props => <Projects {...props}/>} />
+      <Route path="/contact" render={props => <Contact {...props}/>} />
+      <Route path="/art" render={props => <Art {...props}/>} />
     </div>
   );
 }

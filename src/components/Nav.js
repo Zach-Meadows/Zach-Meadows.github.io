@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Nav.css";
 
-function Nav() {
+function Nav(props) {
   return (
     <div className="nav">
       <Link to="/">Home</Link>
