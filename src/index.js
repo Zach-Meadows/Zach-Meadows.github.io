@@ -4,10 +4,9 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
-import history from "./history"
 
 ReactDOM.render(
-  <Router history={history}>
+  <Router>
     <App />
   </Router>,
   document.getElementById("root")
