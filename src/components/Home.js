@@ -48,6 +48,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
+border-bottom: solid 2px black;
 `
 const ResumeSectionHead = styled.h2`
 margin: 0;

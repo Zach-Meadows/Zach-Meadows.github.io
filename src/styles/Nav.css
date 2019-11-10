@@ -19,7 +19,8 @@
   height: inherit;
   cursor: pointer;
   width: inherit;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-left: solid gray 2px;
 }
 .nav > a:hover {
   background-color: rgb(255, 255, 255);
