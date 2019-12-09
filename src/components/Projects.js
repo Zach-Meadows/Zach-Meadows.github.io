@@ -21,7 +21,7 @@ const HoverLink = styled.a`
 const projectInfo = [
   {
     name: "Hangman/Magic Game",
-    url: "/Hangman/",
+    url: "https://zach-meadows.github.io/Hangman/",
     info:
       "This is a simple game of hangman that can be played either single or multiplayer. This game later expanded to include my Magic card guessing game, using an API I developed myself, from Scryfall's API, to generate the images. These games were built using Javascript, HTML, and CSS",
     image: magic,
