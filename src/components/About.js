@@ -17,7 +17,6 @@ const HoverLink = styled(Link)`
 const MyImage = styled.img`
   width: 200px;
   margin: 5px;
-  float: right;
   box-shadow: 0 0.2rem 1rem rgba(0,0,0,.5);
   @media only screen and (max-width: 800px) {
     width: 50%;
@@ -26,7 +25,6 @@ const MyImage = styled.img`
 const LaxImage = styled.img`
 margin: 5px;
   width: 400px;
-  float: left;
   box-shadow: 0 0.2rem 1rem rgba(0,0,0,.5);
   @media only screen and (max-width: 800px) {
     width: 90%;
