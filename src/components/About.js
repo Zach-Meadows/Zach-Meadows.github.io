@@ -19,12 +19,18 @@ const MyImage = styled.img`
   margin: 5px;
   float: right;
   box-shadow: 0 0.2rem 1rem rgba(0,0,0,.5);
+  @media only screen and (max-width: 800px) {
+    width: 50%;
+  }
 `;
 const LaxImage = styled.img`
 margin: 5px;
   width: 400px;
   float: left;
   box-shadow: 0 0.2rem 1rem rgba(0,0,0,.5);
+  @media only screen and (max-width: 800px) {
+    width: 90%;
+  }
 `;
 const TextImageContain = styled.div`
   display: flex;
@@ -33,6 +39,9 @@ const TextImageContain = styled.div`
   margin: 10px;
   max-height: 50%;
   box-sizing: border-box;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 const AboutContainer = styled.div`
   width: 90vw;
@@ -47,6 +56,12 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media only screen and (max-width: 480px) {
+    p{
+      margin: 0;
+      font-size: 12px;
+    }
+  }
 `;
 
 function About(props) {
@@ -54,6 +69,7 @@ function About(props) {
     <AboutContainer>
       <h3>Hi, I'm Zach Meadows and I'm a Software Engineer.</h3>
       <TextImageContain>
+        <MyImage src={headshot}></MyImage>
         <p>
           I'm a creative mind born and raised in northern Virgina. I've always
           been torn between creative outlets and computer related studies, until
@@ -67,12 +83,12 @@ function About(props) {
           these skills and practices I developed to solve engineering problems,
           and in my free time build things for my own curiosity.
         </p>
-          <MyImage src={headshot}></MyImage>
+          
       </TextImageContain>
 
       <TextImageContain>
-        <p>
         <LaxImage src={Lax}></LaxImage>
+        <p>
           After work hours I spend most of my time creating things, across
           multiple mediums. My most recent pet project is a game I'm building
           called "<HoverLink target="_blank"to="/glitchy-game"  rel="noopener noreferrer">Working Title</HoverLink>." It's not done, and that's the whole premise of
