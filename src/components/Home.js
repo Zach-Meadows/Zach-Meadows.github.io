@@ -103,7 +103,6 @@ function Home(props) {
                     </SchoolItem>
                 </FlexSchool>
             </div>
-            <DownloadResume to='/files/Zach-Meadows-Resume.pdf' target="_blank" download>Download a copy of my full resume!</DownloadResume>
         </ResumeContain>
     )
 }
