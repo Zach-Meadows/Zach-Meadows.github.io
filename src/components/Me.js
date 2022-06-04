@@ -58,10 +58,6 @@ function Me(props) {
           rel="noopener noreferrer"
         >
           <StyledIcon icon={["fab", "medium"]} size="lg" />
-        </AstyledLink>
-        <AstyledLink href="mailto:zmeadows1@gmail.com?subject=Let's Talk!">
-        <StyledIcon icon="envelope" size="lg" />
-        </AstyledLink>
       </div>
     </div>
   );
