@@ -58,6 +58,7 @@ function Me(props) {
           rel="noopener noreferrer"
         >
           <StyledIcon icon={["fab", "medium"]} size="lg" />
+        </AstyledLink>
       </div>
     </div>
   );
