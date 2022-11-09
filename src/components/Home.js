@@ -85,23 +85,7 @@ function Home(props) {
                     )
                 })}</FlexSkill>
                 
-                <FlexSchool>
-                    <ResumeSectionHead>Education</ResumeSectionHead>
-                    <SchoolItem>
-                        <div>
-                        <h3>General Assembly, August 2019 - October 2019</h3>
-                        <p>Certificate of Completion, Software Engineering</p>
-                        </div>
-                        <SkillImage src={GA}></SkillImage>
-                    </SchoolItem>
-                    <SchoolItem>
-                        <div>
-                        <h3 style={{margin: "0"}}>Loudoun County High School, 2006 - 2010</h3>
-                        <p>High School Diploma</p>
-                        </div>
-                        <SkillImage src={HS}></SkillImage>
-                    </SchoolItem>
-                </FlexSchool>
+               
             </div>
         </ResumeContain>
     )
