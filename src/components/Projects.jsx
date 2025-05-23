@@ -10,28 +10,32 @@ import apiExampleImage from '../assets/ApiExample.66fd8c5f.png'
 function Projects() {
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "A responsive portfolio website built with modern React and CSS. Features an interactive design with dynamic animations and optimized for both desktop and mobile viewing. Showcases my work with clean, professional presentation.",
-      technologies: ["React", "CSS3", "JavaScript", "Responsive Design"],
+      title: "zachmeadows.com",
+      description: "My personal portfolio website built with React, featuring a modern UI design with interactive elements and responsive layouts. Showcases my projects, skills, and development journey.",
+      technologies: ["React", "JavaScript", "CSS", "Responsive Design"],
       imageUrl: portfolioImage,
-      githubUrl: "https://github.com/Zach-Meadows",
-      liveUrl: "https://zachmeadows.com"
+      supported: true,
+      isWebsite: true,
+      liveUrl: "https://zachmeadows.com",
+      githubUrl: "https://github.com/Zach-Meadows"
     },
     {
-      title: "MrSrvr Discord Bot",
-      description: "A Discord bot built with Python that provides server management and utility features. Includes commands for moderation, user engagement, and server statistics. Deployed on cloud infrastructure for 24/7 availability.",
-      technologies: ["Python", "Discord.py", "SQLite", "API Integration"],
+      title: "Mrsrvr",
+      description: "A full-stack web application for managing and tracking server resources and performance.",
+      technologies: ["React", "Node.js", "MongoDB", "Express"],
       imageUrl: mrsrvrImage,
-      githubUrl: "https://github.com/Zach-Meadows",
-      liveUrl: null
+      liveUrl: "#",
+      githubUrl: "#",
+      supported: false
     },
     {
-      title: "REST API Development",
-      description: "A comprehensive REST API built with modern backend technologies. Features authentication, data validation, and comprehensive documentation. Designed for scalability and performance with proper error handling.",
-      technologies: ["Node.js", "Express", "MongoDB", "JWT", "Swagger"],
+      title: "API Integration",
+      description: "A demonstration of API integration and data handling in modern web applications.",
+      technologies: ["React", "JavaScript", "REST API"],
       imageUrl: apiExampleImage,
-      githubUrl: "https://github.com/Zach-Meadows",
-      liveUrl: null
+      liveUrl: "#",
+      githubUrl: "#",
+      supported: false
     }
   ]
 
