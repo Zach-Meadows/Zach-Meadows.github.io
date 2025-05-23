@@ -1,0 +1,27 @@
+.projects {
+  background-color: var(--section-bg);
+  padding: 5rem 2rem;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.project-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  gap: 3rem;
+  padding: 0 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 350px;
+  }
+} 

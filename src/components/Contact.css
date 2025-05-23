@@ -1,0 +1,171 @@
+.contact {
+  background-color: var(--section-bg);
+  padding: 5rem 2rem;
+}
+
+.contact-columns {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  padding: 0 1rem;
+}
+
+.contact-column {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.contact-column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-color);
+}
+
+.contact-column h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+}
+
+.contact-column p {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links a,
+.social-links .email-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 255, 157, 0.1);
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 160px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 255, 157, 0.15);
+}
+
+.social-links a:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.email-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.email-section h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+}
+
+.email-section .email-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 255, 157, 0.1);
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.email-section .email-link:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 255, 157, 0.15);
+}
+
+.email-section .email-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .contact-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-column {
+    padding: 1.5rem;
+  }
+
+  .contact-column h3 {
+    font-size: 1.3rem;
+  }
+
+  .contact-column p {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    gap: 0.75rem;
+  }
+
+  .social-links a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    width: 140px;
+  }
+
+  .social-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .email-section {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .email-section h4 {
+    font-size: 1.1rem;
+  }
+
+  .email-section .email-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+} 
