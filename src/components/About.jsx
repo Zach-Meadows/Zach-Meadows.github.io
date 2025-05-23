@@ -1,5 +1,7 @@
 import React from 'react'
 import './About.css'
+import headshotImage from '../assets/headshot.447ea93a.jpg'
+import snorlaxImage from '../assets/snorlaxMe.f40361c4.jpg'
 
 function About() {
   const socialLinks = [
@@ -50,7 +52,7 @@ function About() {
           <div className="about-section">
             <div className="about-image-container">
               <img 
-                src="/src/assets/headshot.447ea93a.jpg" 
+                src={headshotImage} 
                 alt="Zach Meadows" 
                 className="about-image" 
               />
@@ -75,7 +77,7 @@ function About() {
           <div className="about-section">
             <div className="about-image-container">
               <img 
-                src="/src/assets/snorlaxMe.f40361c4.jpg" 
+                src={snorlaxImage} 
                 alt="Cosplay Work" 
                 className="about-image" 
               />

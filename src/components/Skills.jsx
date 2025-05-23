@@ -1,52 +1,63 @@
 import React from 'react'
 import './Skills.css'
 
+// Import all technology icons
+import javascriptIcon from '../assets/javascript.61ed8b05.svg'
+import pythonIcon from '../assets/python.svg'
+import awsIcon from '../assets/aws-logo.svg'
+import reactIcon from '../assets/react.df70b005.png'
+import dockerIcon from '../assets/docker.svg'
+import jenkinsIcon from '../assets/jenkins.svg'
+import terraformIcon from '../assets/terraform.svg'
+import unrealIcon from '../assets/unreal.svg'
+import godotIcon from '../assets/godot.png'
+
 function Skills() {
   const technologies = [
     {
       name: "JavaScript",
-      icon: "/src/assets/javascript.61ed8b05.svg",
+      icon: javascriptIcon,
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
       name: "Python",
-      icon: "/src/assets/python.svg",
+      icon: pythonIcon,
       url: "https://www.python.org/"
     },
     {
       name: "AWS",
-      icon: "/src/assets/aws-logo.svg",
+      icon: awsIcon,
       url: "https://aws.amazon.com/"
     },
     {
       name: "React",
-      icon: "/src/assets/react.df70b005.png",
+      icon: reactIcon,
       url: "https://react.dev/"
     },
     {
       name: "Docker",
-      icon: "/src/assets/docker.svg",
+      icon: dockerIcon,
       url: "https://www.docker.com/"
     },
     {
       name: "Jenkins",
-      icon: "/src/assets/jenkins.svg",
+      icon: jenkinsIcon,
       url: "https://www.jenkins.io/"
     },
     {
       name: "Terraform",
-      icon: "/src/assets/terraform.svg",
+      icon: terraformIcon,
       url: "https://www.terraform.io/"
     },
     {
       name: "Unreal Engine",
-      icon: "/src/assets/unreal.svg",
+      icon: unrealIcon,
       url: "https://www.unrealengine.com/",
       gamedev: true
     },
     {
       name: "Godot",
-      icon: "/src/assets/godot.png",
+      icon: godotIcon,
       url: "https://godotengine.org/",
       gamedev: true
     }

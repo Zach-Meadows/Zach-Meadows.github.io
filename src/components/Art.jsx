@@ -1,36 +1,35 @@
 import React, { useState, useEffect } from 'react'
 import './Art.css'
 
+// Import cosplay images
+import masterChiefImage from '../assets/halo.63fa039c.jpg'
+import snorlaxImage from '../assets/snorlax-centered.jpg'
+import bigTheCatImage from '../assets/Big.ce70456d.jpg'
+
 function Art() {
   const [selectedCosplay, setSelectedCosplay] = useState(null)
 
-  const artPieces = [
+  const cosplays = [
     {
       title: "Master Chief Armor",
-      description: "A detailed Spartan armor costume from the Halo universe, crafted with fiberglass and spray paint to recreate the iconic MJOLNIR armor.",
-      imageUrl: "/src/assets/halo.63fa039c.jpg",
-      buildDetails: {
-        materials: ["Cardstock", "Fiberglass", "Fiberglass Resin", "Spray Paint", "Motorcycle Helmet Visor", "Velcro"],
-        techniques: ["Pepakura", "Sanding", "Strapping", "Electronics Integration"]
-      }
+      imageUrl: masterChiefImage,
+      description: "A detailed recreation of Master Chief's iconic MJOLNIR armor from the Halo series. This build showcases advanced crafting techniques and attention to detail in recreating the legendary Spartan armor.",
+      techniques: ["Fiberglass Construction", "Pepakura Modeling", "Automotive Paint", "LED Integration"],
+      materials: ["Fiberglass Resin", "Foam Padding", "Metallic Paint", "Electronics"]
     },
     {
-      title: "Snorlax Costume",
-      description: "A full-size Snorlax costume capturing the beloved Pokémon's distinctive look and size, towering at 7 feet tall.",
-      imageUrl: "/src/assets/snorlax-centered.jpg",
-      buildDetails: {
-        materials: ["Faux Fur", "EVA Foam", "Aluminum Bars", "Contact Cement", "Worbla"],
-        techniques: ["Pepakura", "Pattern Making", "Sewing", "Foam Fabrication", "Support Structure Fabrication"]
-      }
+      title: "Snorlax Costume", 
+      imageUrl: snorlaxImage,
+      description: "A massive 7-foot tall Snorlax costume that brings the beloved Pokémon to life. This oversized costume required innovative construction techniques to maintain both the character's iconic shape and wearer mobility.",
+      techniques: ["Large-Scale Sewing", "Foam Sculpting", "Pattern Drafting", "Weight Distribution"],
+      materials: ["Minky Fabric", "Foam Filling", "Interfacing", "Zipper Hardware"]
     },
     {
-      title: "Big the Cat Cosplay",
-      description: "A character costume bringing Big the Cat from Sonic to life, featuring custom tailoring and attention to character details.",
-      imageUrl: "/src/assets/Big.ce70456d.jpg",
-      buildDetails: {
-        materials: ["Faux Fur", "EVA Foam", "Worbla", "Aluminum Bars", "Contact Cement", "Plasti Dip"],
-        techniques: ["Pepakura", "Pattern Making", "Sewing", "Airbrushing", "Foam Fabrication", "Support Structure Fabrication"]
-      }
+      title: "Big the Cat",
+      imageUrl: bigTheCatImage,
+      description: "A faithful recreation of Big the Cat from Sonic Adventure, complete with his signature purple fur and distinctive appearance. This costume captures the character's unique proportions and friendly demeanor.",
+      techniques: ["Fur Fabric Work", "Character Proportioning", "Costume Fitting", "Detail Painting"],
+      materials: ["Purple Fur Fabric", "Foam Core", "Fabric Paint", "Elastic Strapping"]
     }
   ]
 
@@ -67,7 +66,7 @@ function Art() {
           the final result.
         </p>
         <div className="art-grid">
-          {artPieces.map((piece, index) => (
+          {cosplays.map((piece, index) => (
             <div 
               key={index} 
               className="art-piece clickable" 
@@ -108,12 +107,12 @@ function Art() {
                     <span className="techniques-title">Techniques</span> and <span className="materials-title">Materials</span>
                   </h3>
                   <div className="techniques">
-                    {selectedCosplay.buildDetails.techniques.map((technique, index) => (
+                    {selectedCosplay.techniques.map((technique, index) => (
                       <span key={index} className="technique-tag">{technique}</span>
                     ))}
                   </div>
                   <div className="techniques">
-                    {selectedCosplay.buildDetails.materials.map((material, index) => (
+                    {selectedCosplay.materials.map((material, index) => (
                       <span key={index} className="material-tag">{material}</span>
                     ))}
                   </div>

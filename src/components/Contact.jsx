@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import itchIcon from '../assets/itch.svg'
 
 function Contact() {
   return (
@@ -35,7 +36,7 @@ function Contact() {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <img src="/src/assets/itch.svg" alt="itch.io" className="social-icon" />
+              <img src={itchIcon} alt="itch.io" className="social-icon" />
               itch.io
             </a>
           </div>
