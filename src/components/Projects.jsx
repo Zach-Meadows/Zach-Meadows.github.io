@@ -16,8 +16,8 @@ function Projects() {
       imageUrl: portfolioImage,
       supported: true,
       isWebsite: true,
-      liveUrl: "https://zachmeadows.com",
-      githubUrl: "https://github.com/Zach-Meadows"
+      liveUrl: null,
+      githubUrl: null
     },
     {
       title: "Mrsrvr",
