@@ -5,6 +5,7 @@ function ProjectCard({ title, description, technologies, imageUrl, liveUrl, gith
   const [isHovered, setIsHovered] = useState(false)
 
   const hasNoLinks = !supported && (!githubUrl || githubUrl === "#") && (!liveUrl || liveUrl === "#")
+  const hasAnyLinks = (liveUrl && liveUrl !== "#" && supported) || (githubUrl && githubUrl !== "#" && supported)
 
   return (
     <div 
@@ -41,20 +42,22 @@ function ProjectCard({ title, description, technologies, imageUrl, liveUrl, gith
       )}
       <div className="project-image">
         <img src={imageUrl} alt={title} />
-        <div className={`project-overlay ${isHovered ? 'visible' : ''}`}>
-          <div className="project-links">
-            {liveUrl && liveUrl !== "#" && supported && (
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                {liveUrl.includes('itch.io') ? 'Download on itch.io' : 'Live Demo'}
-              </a>
-            )}
-            {githubUrl && githubUrl !== "#" && supported && (
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                GitHub
-              </a>
-            )}
+        {hasAnyLinks && (
+          <div className={`project-overlay ${isHovered ? 'visible' : ''}`}>
+            <div className="project-links">
+              {liveUrl && liveUrl !== "#" && supported && (
+                <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
+                  {liveUrl.includes('itch.io') ? 'Download on itch.io' : 'Live Demo'}
+                </a>
+              )}
+              {githubUrl && githubUrl !== "#" && supported && (
+                <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
+                  GitHub
+                </a>
+              )}
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <div className="project-content">
         <h3 title={isWebsite ? `${title} (this website)` : title}>{title}</h3>
