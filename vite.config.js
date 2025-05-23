@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // This ensures proper asset paths for GitHub Pages
+  base: '/', // For username.github.io repositories, use root path
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
