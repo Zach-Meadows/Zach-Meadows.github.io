@@ -13,23 +13,23 @@ function Art() {
     {
       title: "Master Chief Armor",
       imageUrl: masterChiefImage,
-      description: "A detailed recreation of Master Chief's iconic MJOLNIR armor from the Halo series. This build showcases advanced crafting techniques and attention to detail in recreating the legendary Spartan armor.",
-      techniques: ["Fiberglass Construction", "Pepakura Modeling", "Automotive Paint", "LED Integration"],
-      materials: ["Fiberglass Resin", "Foam Padding", "Metallic Paint", "Electronics"]
+      description: "A detailed recreation of Master Chief's iconic MJOLNIR armor from the Halo series. While not perfect, this build taught me a lot about working with fiberglass and electronics.",
+      techniques: ["Pepakura", "Paint Weathering", "Sanding", "Strapping", "Electronics Integration"],
+      materials: ["Cardstock", "Fiberglass", "Fiberglass Resin", "Velcro", "Spray Paint", "Electronics"]
     },
     {
-      title: "Snorlax Costume", 
+      title: "Snorlax", 
       imageUrl: snorlaxImage,
       description: "A massive 7-foot tall Snorlax costume that brings the beloved Pokémon to life. This oversized costume required innovative construction techniques to maintain both the character's iconic shape and wearer mobility.",
-      techniques: ["Large-Scale Sewing", "Foam Sculpting", "Pattern Drafting", "Weight Distribution"],
-      materials: ["Minky Fabric", "Foam Filling", "Interfacing", "Zipper Hardware"]
+      techniques: ["Pepakura", "Large-Scale Sewing", "Foam Fabrication", "Pattern Design", "Foam Carving"],
+      materials: ["EVA Foam", "Faux Fur", "Aluminum Bars", "Contact Cement", "Worbla"]
     },
     {
       title: "Big the Cat",
       imageUrl: bigTheCatImage,
-      description: "A faithful recreation of Big the Cat from Sonic Adventure, complete with his signature purple fur and distinctive appearance. This costume captures the character's unique proportions and friendly demeanor.",
-      techniques: ["Fur Fabric Work", "Character Proportioning", "Costume Fitting", "Detail Painting"],
-      materials: ["Purple Fur Fabric", "Foam Core", "Fabric Paint", "Elastic Strapping"]
+      description: "A faithful recreation of Big the Cat from The Sonic Series, complete with his signature purple fur and his BIG stature.",
+      techniques: ["Pepakura", "Airbrushing", "3D Printing", "Foam Fabrication", "Pattern Design"],
+      materials: ["EVA Foam", "Faux Fur", "Aluminum Bars", "Contact Cement", "Plasti Dip"]
     }
   ]
 
